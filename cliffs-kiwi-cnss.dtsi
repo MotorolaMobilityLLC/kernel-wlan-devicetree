@@ -87,8 +87,7 @@
 		qcom,vdd-wlan-io-config = <1800000 1800000 0 0 1>;
 		vdd-wlan-io12-supply = <&L5B>;
 		qcom,vdd-wlan-io12-config = <1200000 1200000 0 0 1>;
-		vdd-wlan-supply = <&S3E>;
-		qcom,vdd-wlan-config = <940000 1003000 0 0 1>;
+		vdd-wlan-supply = <&S3B>;
 		vdd-wlan-dig-supply = <&S3B>;
 		qcom,vdd-wlan-dig-config = <968000 1040000 0 0 1>;
 		vdd-wlan-rfa1-supply = <&S1B>;
