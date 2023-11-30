@@ -86,9 +86,12 @@ dtbo-y += niobe-kiwi-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
+ifeq ($(CONFIG_MOT_CNSS_KIWI_V2),y)
 dtbo-y += cliffs-kiwi-cnss.dtbo
+else
 dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
+endif
 endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO),y)
