@@ -65,15 +65,9 @@ dtbo-y += sdxkova-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
-
 dtbo-$(CONFIG_ARCF_DTB) += pineapple-kiwi-cnss-arcf-evt1a.dtbo
 dtbo-$(CONFIG_CTWOV_DTB) += pineapple-kiwi-cnss-ctwov-evb.dtbo
-
-dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-cnss-arcfox-evt3.dtbo
-dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-cnss-ctwo-evb3.dtbo
-
 else
-
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
@@ -87,7 +81,8 @@ endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 ifeq ($(CONFIG_MOT_CNSS_KIWI_V2),y)
-dtbo-y += cliffs-kiwi-cnss.dtbo
+dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-cnss-arcfox-evt3.dtbo
+dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-cnss-ctwo-evb3.dtbo
 else
 dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
