@@ -98,6 +98,7 @@ dtbo-y += direwolf-vm-dual-cnss.dtbo
 dtbo-y += lemans-vm-cnss.dtbo
 dtbo-y += monaco-vm-cnss.dtbo
 dtbo-y += sa6155p-vm-cnss.dtbo
+dtbo-y += monaco_auto-vm-cnss.dtbo
 endif
 
 
