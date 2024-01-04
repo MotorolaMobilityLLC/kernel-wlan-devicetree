@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 
-#include "cliffs-kiwi-cnss.dtsi"
+#include "cliffs-kiwi-cnss-pmu-s3b.dtsi"
 
 / {
 	model = "arcfox";
