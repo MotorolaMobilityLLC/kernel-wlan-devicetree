@@ -84,6 +84,7 @@ ifeq ($(CONFIG_MOT_CNSS_KIWI_V2),y)
 dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-cnss-arcfox-evt3.dtbo
 dtbo-$(CONFIG_ARCFOX_DTB) += cliffs-kiwi-cnss-arcfox-dvt1c.dtbo
 dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-cnss-ctwo-evb3.dtbo
+dtbo-$(CONFIG_CTWO_DTB) += cliffs-kiwi-cnss-ctwo-dvt1b.dtbo
 else
 dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
