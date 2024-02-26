@@ -69,6 +69,10 @@ dtbo-y += cliffs-kiwi-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_VOLCANO),y)
+dtbo-y += volcano-qca6750.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_MONACO),y)
 dtbo-y += monaco-cnss.dtbo
 dtbo-y += monaco-standalone-cnss.dtbo
