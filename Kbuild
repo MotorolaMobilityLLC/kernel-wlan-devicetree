@@ -9,6 +9,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-cnss.dtbo
+dtbo-y += kalama-aim300-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_QCS405),y)
@@ -17,6 +18,10 @@ endif
 
 ifeq ($(CONFIG_ARCH_KHAJE),y)
 dtbo-y += khaje-cnss.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_BENGAL),y)
+dtbo-y += bengal-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_BLAIR),y)
@@ -59,8 +64,13 @@ dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
 dtbo-y += pineapplep-aim500-kiwi-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_NIOBE),y)
+dtbo-y += niobe-kiwi-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-kiwi-cnss.dtbo
+dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
 endif
 
