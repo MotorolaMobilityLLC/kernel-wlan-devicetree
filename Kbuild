@@ -64,8 +64,13 @@ dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
 dtbo-y += pineapplep-aim500-kiwi-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_NIOBE),y)
+dtbo-y += niobe-kiwi-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-kiwi-cnss.dtbo
+dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
 endif
 
