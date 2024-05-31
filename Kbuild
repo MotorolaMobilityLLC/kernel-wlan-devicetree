@@ -89,6 +89,11 @@ dtbo-y += lemans-cnss.dtbo
 endif
 endif
 
+
+ifeq ($(CONFIG_ARCH_ANORAK),y)
+dtbo-y += anorak-kiwi-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_QTI_QUIN_GVM),y)
 dtbo-y += sa8155p-vm-cnss.dtbo
 dtbo-y += sa8195p-vm-cnss.dtbo
