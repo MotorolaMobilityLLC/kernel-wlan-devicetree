@@ -51,7 +51,7 @@
 		compatible = "qcom,cnss-kiwi";
 		reg = <0xb0000000 0x10000>;
 		reg-names = "smmu_iova_ipa";
-		qcom,wlan-sw-ctrl-gpio = <&tlmm 32 0>;
+		qcom,wlan-sw-ctrl-gpio = <&tlmm 34 0>;
 
 		supported-ids = <0x1107>;
 		wlan-en-gpio = <&tlmm 31 0>;
