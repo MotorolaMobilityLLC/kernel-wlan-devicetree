@@ -57,6 +57,8 @@
 		wlan-en-gpio = <&tlmm 31 0>;
 		qcom,bt-en-gpio = <&tlmm 33 0>;
 		qcom,sw-ctrl-gpio = <&tlmm 32 0>;
+		/* List of GPIOs to be setup for interrupt wakeup capable */
+		mpm_wake_set_gpios = <32 34>;
 		pinctrl-names = "wlan_en_active", "wlan_en_sleep";
 		pinctrl-0 = <&cnss_wlan_en_active>;
 		pinctrl-1 = <&cnss_wlan_en_sleep>;
