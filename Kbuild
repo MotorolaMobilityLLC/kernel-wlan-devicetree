@@ -91,6 +91,7 @@ endif
 
 
 ifeq ($(CONFIG_ARCH_ANORAK),y)
+dtbo-y += anorak-hsp-cnss.dtbo
 dtbo-y += anorak-kiwi-cnss.dtbo
 endif
 
