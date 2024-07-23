@@ -14,6 +14,12 @@ dtbo-y += alor-qrd-peach.dtbo
 dtbo-y += alor-rcm-peach.dtbo
 endif
 
+ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
+
+dtbo-$(CONFIG_LEAP_DTB) += sun-peach-cnss-leap-evb.dtbo
+
+else
+
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-kiwi-cnss.dtbo
 dtbo-y += sun-kiwi-cnss-v8.dtbo
@@ -26,6 +32,8 @@ ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
 endif
+
+endif  # end of CONFIG_MMI_DEVICE_DTBS
 
 ifeq ($(CONFIG_ARCH_X1E80100),y)
 dtbo-y += x1e80100-kiwi-cnss.dtbo
