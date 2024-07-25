@@ -63,6 +63,10 @@ dtbo-y += kera-qrd-wcn7750.dtbo
 dtbo-y += kera-rcm-wcn7750.dtbo
 endif
 
+ifeq ($(CONFIG_MONA_DTB),y)
+dtbo-y += parrot-mona-wcn6755.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
