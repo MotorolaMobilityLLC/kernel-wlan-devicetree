@@ -89,6 +89,10 @@ ifeq ($(CONFIG_ARCH_YUPIK),y)
 dtbo-y += lahaina-qca6490-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_MONA_DTB),y)
+dtbo-y += parrot-mona-wcn6755.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
