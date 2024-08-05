@@ -121,6 +121,10 @@ ifeq ($(CONFIG_ARCH_TRINKET),y)
 dtbo-y += trinket-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_SCUBA),y)
+dtbo-y += scuba-cnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
