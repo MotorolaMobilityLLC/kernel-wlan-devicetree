@@ -68,7 +68,7 @@ dtbo-y += parrot-mona-wcn6755.dtbo
 endif
 
 ifeq ($(CONFIG_MONAI_DTB),y)
-dtbo-y += parrot-monai-wcn6750.dtbo
+dtbo-y += parrot-monai-wcn6755.dtbo
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
