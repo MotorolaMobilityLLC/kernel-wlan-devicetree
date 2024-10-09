@@ -39,3 +39,8 @@
 		};
 	};
 };
+
+&cnss_pci0 {
+	reg = <0x4000 0x00 0x00 0x00 0x00>;
+	status="disabled";
+};
