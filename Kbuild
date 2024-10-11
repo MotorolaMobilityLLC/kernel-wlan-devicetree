@@ -59,6 +59,10 @@ ifeq ($(CONFIG_ARCH_SDXPINN),y)
 dtbo-y += sdxpinn-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_SDXKOVA),y)
+dtbo-y += sdxkova-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
