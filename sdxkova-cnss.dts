@@ -1,0 +1,11 @@
+/dts-v1/;
+/plugin/;
+
+#include "sdxkova-cnss.dtsi"
+
+/ {
+	model = "Qualcomm Technologies, Inc. SDXKOVA SoC";
+	compatible = "qcom,sdxkova";
+	qcom,msm-id = <0 0>;
+	qcom,board-id = <0 0>;
+};
