@@ -74,7 +74,7 @@
 		qcom,vdd-1.2-rfa-config = <1256000 1408000 0 0 0>;
 		vdd-cx-supply = <&L3F>;
 		qcom,vdd-cx-config = <650000 880000 0 0 0>;
-		vdd-1.8-io-supply = <&L7B>;
+		vdd-1.8-io-supply = <&L1B>;
 		qcom,vdd-1.8-io-config = <1800000 1800000 0 0 0>;
 		vdd-3p3-2g-supply = <&L14B>;
 		qcom,vdd-3p3-2g-config = <3300000 3300000 0 0 0>;
