@@ -90,6 +90,10 @@ dtbo-y += lemans-cnss.dtbo
 endif
 endif
 
+ifeq ($(CONFIG_ARCH_NEO),y)
+dtbo-y += neo-kiwi-cnss.dtbo
+dtbo-y += neo_luna-v2-kiwi-cnss.dtbo
+endif
 
 ifeq ($(CONFIG_ARCH_ANORAK),y)
 dtbo-y += anorak-hsp-cnss.dtbo
