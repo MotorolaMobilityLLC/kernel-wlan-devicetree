@@ -117,6 +117,9 @@ dtbo-y += sa6155p-vm-cnss.dtbo
 dtbo-y += monaco_auto-vm-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_QTI_VM),y)
+dtbo-y += lemans-gunyah-vm-cnss.dtbo
+endif
 
 ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
