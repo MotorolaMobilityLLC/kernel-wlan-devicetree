@@ -11,6 +11,7 @@ ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-cnss.dtbo
 dtbo-y += kalama-aim300-cnss.dtbo
 dtbo-y += kalama-rb5-gen2-cnss.dtbo
+dtbo-y += kalama-iot-vc-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_QCS405),y)
