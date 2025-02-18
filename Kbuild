@@ -105,7 +105,7 @@ dtbo-y += anorak-hsp-cnss.dtbo
 dtbo-y += anorak-kiwi-cnss.dtbo
 endif
 
-ifeq ($(CONFIG_QTI_QUIN_GVM),y)
+ifeq ($(CONFIG_ARCH_QTI_VM),y)
 dtbo-y += sa8155p-vm-cnss.dtbo
 dtbo-y += sa8195p-vm-cnss.dtbo
 dtbo-y += sa8255p-vm-cnss.dtbo
