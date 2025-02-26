@@ -125,6 +125,10 @@ ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
 endif
 
+ifeq ($(TARGET_SUPPORT),sa510m)
+dtbo-y += sa510m-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KONA),y)
 dtbo-y += kona-iot-vc-cnss.dtbo
 endif
