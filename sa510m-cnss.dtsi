@@ -57,12 +57,14 @@
 		qcom,bus-type=<0>;
 		qcom,notify-modem-status;
 
+		vdd-wlan-ctrl1-supply = <&vreg_conn_pa>;
 		vdd-wlan-io-supply = <&L6A>;
-		wlan_vregs = "vdd-wlan-io";
+		wlan_vregs = "vdd-wlan-io", "vdd-wlan-ctrl1";
 		qcom,vdd-wlan-io-config = <1800000 1800000 0 0 1>;
+		qcom,vdd-wlan-ctrl1-config = <0 0 0 0 0>;
 		wlan-en-gpio = <&tlmm 95 0>;
 		pinctrl-names = "wlan_en_active", "wlan_en_sleep";
-		pinctrl-0 = <&wlan_en_active &display_bl_en>;
+		pinctrl-0 = <&wlan_en_active>;
 		pinctrl-1 = <&wlan_en_sleep>;
 
 		chip_cfg@0 {
