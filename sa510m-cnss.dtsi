@@ -56,6 +56,8 @@
 		qcom,wlan-rc-num = <0>;
 		qcom,bus-type=<0>;
 		qcom,notify-modem-status;
+		reg = <0xb0000000 0x10000>;
+		reg-names = "smmu_iova_ipa";
 
 		vdd-wlan-ctrl1-supply = <&vreg_conn_pa>;
 		vdd-wlan-io-supply = <&L6A>;
@@ -93,7 +95,7 @@
 		cnss_pci_iommu_group: cnss_pci_iommu_group {
 			qcom,iommu-dma-addr-pool = <0xa0000000 0x10000000>;
 			qcom,iommu-geometry = <0xa0000000 0x10010000>;
-			qcom,iommu-dma = "atomic";
+			qcom,iommu-dma = "fastmap";
 			qcom,iommu-faults = "stall-disable", "no-CFRE", "HUPCF",
 					    "non-fatal";
 		};
