@@ -142,6 +142,10 @@ ifeq ($(CONFIG_ARCH_SCUBA),y)
 dtbo-y += scuba-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_SERAPH),y)
+dtbo-y += seraph-peach-cnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
