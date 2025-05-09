@@ -120,6 +120,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_QTI_VM),y)
 dtbo-y += lemans-gunyah-vm-cnss.dtbo
+dtbo-y += sa8797p-gunyah-vm-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_SA525),y)
@@ -140,6 +141,10 @@ endif
 
 ifeq ($(CONFIG_ARCH_SCUBA),y)
 dtbo-y += scuba-cnss.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_SERAPH),y)
+dtbo-y += seraph-peach-cnss.dtbo
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
