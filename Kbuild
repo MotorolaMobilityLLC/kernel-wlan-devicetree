@@ -105,6 +105,10 @@ ifeq ($(CONFIG_MUMBA_DTB),y)
 dtbo-y += parrot-mumba-wcn3990.dtbo
 endif
 
+ifeq ($(CONFIG_CUSCO_DTB),y)
+dtbo-y += parrot-cuscoi-wcn3990.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
