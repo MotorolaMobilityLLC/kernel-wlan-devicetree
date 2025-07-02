@@ -148,6 +148,10 @@ ifeq ($(CONFIG_ARCH_SERAPH),y)
 dtbo-y += seraph-peach-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_SM6150),y)
+dtbo-y += qcs610-icnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
