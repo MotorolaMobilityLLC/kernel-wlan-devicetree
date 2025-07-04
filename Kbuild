@@ -19,6 +19,7 @@ endif
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_VANTG_DTB) += canoe-peach-cnss-vantg-evb.dtbo
+dtbo-$(CONFIG_BLANC_DTB) += canoe-peach-cnss-blanc-evb.dtbo
 
 else
 
