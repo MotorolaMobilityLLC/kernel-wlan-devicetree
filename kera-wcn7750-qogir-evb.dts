@@ -12,5 +12,5 @@
 	model = "qogir";
 	compatible = "qcom,kera-qrd", "qcom,kera", "qcom,qrd";
 	qcom,msm-id = <686 0x10000>, <659 0x10000>;
-	qcom,board-id = <0x44 0x9000>;
+	qcom,board-id = <0x44 0x9000>, <0x44 0x9200>;
 };
