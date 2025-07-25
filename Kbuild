@@ -67,6 +67,7 @@ endif
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 dtbo-$(CONFIG_ARCF_DTB) += pineapple-kiwi-cnss-arcf-evt1a.dtbo
 dtbo-$(CONFIG_CTWOV_DTB) += pineapple-kiwi-cnss-ctwov-evb.dtbo
+dtbo-$(CONFIG_MARVEL_DTB) += volcano-wcn6450-marvel-evb.dtbo
 else
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo

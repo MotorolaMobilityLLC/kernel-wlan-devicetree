@@ -1,0 +1,11 @@
+/dts-v1/;
+/plugin/;
+
+#include "volcano-wcn6450-marvel.dtsi"
+
+/ {
+	model = "marvel";
+	compatible = "qcom,volcano";
+	qcom,msm-id = <636 0x10000>, <640 0x10000>, <641 0x10000>, <712 0x10000>;
+	qcom,board-id = <0x41 0x9000>;
+};
