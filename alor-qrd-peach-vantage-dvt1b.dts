@@ -6,7 +6,7 @@
 /dts-v1/;
 /plugin/;
 
-#include "alor-peach-cnss-vantage.dtsi"
+#include "alor-peach-cnss.dtsi"
 
 / {
 	model = "vantage";
