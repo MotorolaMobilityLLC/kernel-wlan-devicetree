@@ -20,7 +20,7 @@ ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_VANTG_DTB) += canoe-peach-cnss-vantg-evb.dtbo
 dtbo-$(CONFIG_BLANC_DTB) += alor-qrd-peach-blanc-evb.dtbo
-dtbo-$(CONFIG_VANTAGE_DTB) += alor-qrd-peach-vantage-dvt1b.dtbo
+#dtbo-$(CONFIG_VANTAGE_DTB) += alor-qrd-peach-vantage-dvt1b.dtbo
 
 else
 
