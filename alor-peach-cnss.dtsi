@@ -7,7 +7,7 @@
 #include <dt-bindings/interconnect/qcom,alor.h>
 
 &wlan_msa_mem {
-	status = "disabled";
+	status = "ok";
 };
 
 &wpss_mem {
