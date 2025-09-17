@@ -12,5 +12,5 @@
 	model = "Qualcomm Technologies, Inc. Kera SoC + MSL WLAN";
 	compatible = "qcom,kera";
 	qcom,msm-id = <686 0x10000>, <659 0x10000>;
-	qcom,board-id = <0x41 0x9000>, <0x41 0xA100>;
+	qcom,board-id = <0x41 0x9000>, <0x41 0xA100>, <0x441 0xA100>;
 };
