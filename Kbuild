@@ -27,6 +27,7 @@ dtbo-$(CONFIG_BLANC_DTB) += alor-qrd-peach-blanc-evb.dtbo
 dtbo-$(CONFIG_MAKALU_DTB) += alor-qrd-peach-makalu-evb.dtbo
 dtbo-$(CONFIG_VANTAGE_DTB) += alor-qrd-peach-vantage-dvt1b.dtbo
 dtbo-$(CONFIG_AVR_DTB) += alor-qrd-wcn7750-avr-evb.dtbo
+dtbo-$(CONFIG_ELETRE_DTB) += alor-qrd-wcn7750-eletre-evb.dtbo
 
 else
 
